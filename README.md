@@ -9,12 +9,19 @@ This script is designed to process a catering order PDF and export a detailed pl
 
 ## VSCode setup for Python
 1. Download the `Python` Extension 
+2. Create `.vscode/settings.json` and the following. Be sure to add your own Windows user and change python version if necessary. (Assuming defualt install path of Python 3.11):
+```
+{
+    "python.pythonPath": "C:\\Users\\<Insert User Here>\\AppData\\Local\\Programs\\Python\\Python311\\python.exe"
+}
+```
+
 
 ## Run script
 `python process.py <input file path>`
 
 ## Debugging
-A VSCode configuration is included in this project. Place breakpoints and run the `Process` configuration in the `Run and Debug` tab.
+A VSCode configuration is included in this project. Place breakpoints and run the `Process` configuration in the `Run and Debug` tab. This will process the Test PDF in the project.
 
 ## Output
 Output files are written to the `output/` directory

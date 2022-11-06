@@ -1,6 +1,7 @@
 import sys
 from datetime import datetime
 from PyPDF2 import PdfReader
+from textblob import TextBlob
 
 path = sys.argv[1]
 
@@ -14,7 +15,9 @@ for page in reader.pages:
 print('parsed')
 
 print('processing...')
-result = text # Add processing logic
+blob = TextBlob(text)
+result = blob.to_json()
+# TODO: more processing
 print('processed')
 
 print('writing output...')
@@ -27,4 +30,4 @@ outputFile.write(result)
 outputFile.close()
 print('output complete')
 
-print('process completet')
+print('process complete')
