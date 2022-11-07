@@ -5,6 +5,8 @@ from textblob import TextBlob
 
 path = sys.argv[1]
 
+# TODO: read yml file
+
 print('running script...') 
 print('input path: ', path)
 print('parsing...')
