@@ -1,5 +1,6 @@
 # Automated Catering Planner
 This script is designed to process a catering order PDF and export a detailed plan for catering staff.
+This project uses TextBlob. See documentation here: https://textblob.readthedocs.io/en/dev/
 
 ## Python setup for windows
 1. Download the Python installer here: https://www.python.org/downloads/
@@ -16,6 +17,8 @@ This script is designed to process a catering order PDF and export a detailed pl
 }
 ```
 
+## Install dependencies
+`pip install -r requirements.txt`
 
 ## Run script
 `python process.py <input file path>`
